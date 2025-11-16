@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-15T19:55:06.934627" rpa="false" schemaversion="5">
+<suite id="s1" name="Todo Tests" source="C:\Users\HP\Desktop\DesafioRobot\todo_automation\tests\todo_tests.robot">
+<test id="s1-t1" name="Cenário 1 - Adicionar e filtrar atividades concluídas" line="12">
+<kw name="Abrir Aplicacao" owner="todo_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:07.197487" level="INFO">Opening browser 'chrome' to base url 'https://todomvc.com/examples/react/dist/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T19:55:07.197153" elapsed="3.709948"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:input.new-todo</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:10.907555" elapsed="0.022597"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:07.196140" elapsed="3.734141"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:10.932147" level="INFO">Typing text 'Lavar roupa' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:10.931858" elapsed="0.112086"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:11.045112" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:11.342852" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:11.342942" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.044281" elapsed="0.396611"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.441313" elapsed="0.016758"/>
+</kw>
+<arg>Lavar roupa</arg>
+<status status="PASS" start="2025-11-15T19:55:10.931431" elapsed="0.527005"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:11.460614" level="INFO">Typing text 'Estudar Robot' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.459873" elapsed="0.096435"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:11.557121" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:11.834791" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:11.835089" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.556541" elapsed="0.305450"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.862189" elapsed="0.010897"/>
+</kw>
+<arg>Estudar Robot</arg>
+<status status="PASS" start="2025-11-15T19:55:11.458978" elapsed="0.414220"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:11.874170" level="INFO">Typing text 'Fazer compras' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.873963" elapsed="0.064490"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:11.939437" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:12.236263" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:12.236589" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:11.938853" elapsed="0.326408"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.265799" elapsed="0.018050"/>
+</kw>
+<arg>Fazer compras</arg>
+<status status="PASS" start="2025-11-15T19:55:11.873597" elapsed="0.410406"/>
+</kw>
+<kw name="Marcar Como Concluida" owner="todo_keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-15T19:55:12.285430" level="INFO">${locator} = xpath=//li[.//label[text()='Estudar Robot']]//input[@type="checkbox"]</msg>
+<var>${locator}</var>
+<arg>xpath=//li[.//label[text()='${atividade}']]//input[@type="checkbox"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.285074" elapsed="0.000419"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:12.285985" level="INFO">Clicking element 'xpath=//li[.//label[text()='Estudar Robot']]//input[@type="checkbox"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.285683" elapsed="0.121570"/>
+</kw>
+<arg>Estudar Robot</arg>
+<status status="PASS" start="2025-11-15T19:55:12.284598" elapsed="0.123072"/>
+</kw>
+<kw name="Filtrar Atividades Concluidas" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:12.409510" level="INFO">Clicking element 'link:Completed'.</msg>
+<arg>link:Completed</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.409129" elapsed="0.103625"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:12.408455" elapsed="0.104499"/>
+</kw>
+<kw name="Verificar Atividade Visivel" owner="todo_keywords">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.513975" elapsed="0.015644"/>
+</kw>
+<arg>Estudar Robot</arg>
+<status status="PASS" start="2025-11-15T19:55:12.513426" elapsed="0.016329"/>
+</kw>
+<kw name="Verificar Atividade Nao Visivel" owner="todo_keywords">
+<kw name="Wait Until Page Does Not Contain" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.530547" elapsed="0.006819"/>
+</kw>
+<arg>Lavar roupa</arg>
+<status status="PASS" start="2025-11-15T19:55:12.530196" elapsed="0.007277"/>
+</kw>
+<kw name="Fechar Aplicacao" owner="todo_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-15T19:55:12.538350" elapsed="2.421114"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:12.537999" elapsed="2.421984"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:07.195056" elapsed="7.767045"/>
+</test>
+<test id="s1-t2" name="Cenário 2 - Excluir atividade concluída" line="21">
+<kw name="Abrir Aplicacao" owner="todo_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:14.967890" level="INFO">Opening browser 'chrome' to base url 'https://todomvc.com/examples/react/dist/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T19:55:14.967579" elapsed="1.848512"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:input.new-todo</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:16.816388" elapsed="0.016033"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:14.967142" elapsed="1.865466"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:16.834403" level="INFO">Typing text 'Dormir' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:16.834100" elapsed="0.088618"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:16.923321" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:17.223720" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:17.223837" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:16.922921" elapsed="0.356147"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.279363" elapsed="0.018716"/>
+</kw>
+<arg>Dormir</arg>
+<status status="PASS" start="2025-11-15T19:55:16.833381" elapsed="0.464829"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:17.299629" level="INFO">Typing text 'Comer' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.299306" elapsed="0.100071"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:17.400267" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:17.681587" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:17.681809" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.399700" elapsed="0.301417"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.701410" elapsed="0.016108"/>
+</kw>
+<arg>Comer</arg>
+<status status="PASS" start="2025-11-15T19:55:17.298759" elapsed="0.418874"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:17.718638" level="INFO">Typing text 'Trabalhar' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.718401" elapsed="0.079660"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:17.798790" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:18.089883" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:18.090011" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:17.798322" elapsed="0.310396"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.109465" elapsed="0.012697"/>
+</kw>
+<arg>Trabalhar</arg>
+<status status="PASS" start="2025-11-15T19:55:17.718061" elapsed="0.404200"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.123263" level="INFO">Typing text 'Caminhar' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.123020" elapsed="0.082110"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.205876" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:18.489924" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:18.490025" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.205380" elapsed="0.305956"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.511529" elapsed="0.011228"/>
+</kw>
+<arg>Caminhar</arg>
+<status status="PASS" start="2025-11-15T19:55:18.122692" elapsed="0.400171"/>
+</kw>
+<kw name="Marcar Como Concluida" owner="todo_keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-15T19:55:18.523826" level="INFO">${locator} = xpath=//li[.//label[text()='Trabalhar']]//input[@type="checkbox"]</msg>
+<var>${locator}</var>
+<arg>xpath=//li[.//label[text()='${atividade}']]//input[@type="checkbox"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.523600" elapsed="0.000258"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.524175" level="INFO">Clicking element 'xpath=//li[.//label[text()='Trabalhar']]//input[@type="checkbox"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.523970" elapsed="0.086468"/>
+</kw>
+<arg>Trabalhar</arg>
+<status status="PASS" start="2025-11-15T19:55:18.523249" elapsed="0.087373"/>
+</kw>
+<kw name="Excluir Atividade" owner="todo_keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-15T19:55:18.612091" level="INFO">${locator} = xpath=//li[.//label[text()='Trabalhar']]//button[@class="destroy"]</msg>
+<var>${locator}</var>
+<arg>xpath=//li[.//label[text()='${atividade}']]//button[@class="destroy"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.611744" elapsed="0.000385"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.612543" level="INFO">Simulating Mouse Over on element 'xpath=//li[.//label[text()='Trabalhar']]'.</msg>
+<arg>xpath=//li[.//label[text()='${atividade}']]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.612283" elapsed="0.295287"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.908368" level="INFO">Clicking element 'xpath=//li[.//label[text()='Trabalhar']]//button[@class="destroy"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.907975" elapsed="0.073818"/>
+</kw>
+<arg>Trabalhar</arg>
+<status status="PASS" start="2025-11-15T19:55:18.611166" elapsed="0.370731"/>
+</kw>
+<kw name="Filtrar Atividades Concluidas" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:18.982843" level="INFO">Clicking element 'link:Completed'.</msg>
+<arg>link:Completed</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:18.982618" elapsed="0.146679"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:18.982253" elapsed="0.147638"/>
+</kw>
+<kw name="Verificar Atividade Nao Visivel" owner="todo_keywords">
+<kw name="Wait Until Page Does Not Contain" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:19.131979" elapsed="0.037878"/>
+</kw>
+<arg>Trabalhar</arg>
+<status status="PASS" start="2025-11-15T19:55:19.131092" elapsed="0.038987"/>
+</kw>
+<kw name="Fechar Aplicacao" owner="todo_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-15T19:55:19.172496" elapsed="2.251415"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:19.171602" elapsed="2.252777"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:14.966300" elapsed="6.459001"/>
+</test>
+<test id="s1-t3" name="Cenário 3 - Limpar atividades concluídas" line="31">
+<kw name="Abrir Aplicacao" owner="todo_keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:21.429905" level="INFO">Opening browser 'chrome' to base url 'https://todomvc.com/examples/react/dist/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-15T19:55:21.429628" elapsed="1.765254"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:input.new-todo</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.195099" elapsed="0.014388"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:21.429150" elapsed="1.780439"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:23.210649" level="INFO">Typing text 'Ler' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.210393" elapsed="0.092673"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:23.303873" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:23.604971" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:23.605069" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.303227" elapsed="0.358233"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.661752" elapsed="0.016798"/>
+</kw>
+<arg>Ler</arg>
+<status status="PASS" start="2025-11-15T19:55:23.210038" elapsed="0.468653"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:23.679804" level="INFO">Typing text 'Estudar' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.679564" elapsed="0.101938"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:23.782380" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:24.065948" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:24.066225" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:23.781826" elapsed="0.322754"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.105214" elapsed="0.018809"/>
+</kw>
+<arg>Estudar</arg>
+<status status="PASS" start="2025-11-15T19:55:23.679124" elapsed="0.445059"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:24.125569" level="INFO">Typing text 'Cozinhar' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.125278" elapsed="0.064503"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:24.190852" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:24.482026" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:24.482317" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.190044" elapsed="0.328307"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.518633" elapsed="0.016261"/>
+</kw>
+<arg>Cozinhar</arg>
+<status status="PASS" start="2025-11-15T19:55:24.124751" elapsed="0.410283"/>
+</kw>
+<kw name="Adicionar Atividade" owner="todo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:24.536345" level="INFO">Typing text 'Correr' into text field 'css:input.new-todo'.</msg>
+<arg>css:input.new-todo</arg>
+<arg>${atividade}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.536036" elapsed="0.090939"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:24.627696" level="INFO">Sending key(s) ('RETURN',) to css:input.new-todo element.</msg>
+<msg time="2025-11-15T19:55:24.906038" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2025-11-15T19:55:24.906148" level="INFO">Releasing special key RETURN.</msg>
+<arg>css:input.new-todo</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.627216" elapsed="0.293190"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${atividade}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.921491" elapsed="0.015729"/>
+</kw>
+<arg>Correr</arg>
+<status status="PASS" start="2025-11-15T19:55:24.535541" elapsed="0.401908"/>
+</kw>
+<kw name="Marcar Como Concluida" owner="todo_keywords">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-11-15T19:55:24.939476" level="INFO">${locator} = xpath=//li[.//label[text()='Correr']]//input[@type="checkbox"]</msg>
+<var>${locator}</var>
+<arg>xpath=//li[.//label[text()='${atividade}']]//input[@type="checkbox"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.939049" elapsed="0.000498"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:24.940352" level="INFO">Clicking element 'xpath=//li[.//label[text()='Correr']]//input[@type="checkbox"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:24.939989" elapsed="0.101359"/>
+</kw>
+<arg>Correr</arg>
+<status status="PASS" start="2025-11-15T19:55:24.938312" elapsed="0.103211"/>
+</kw>
+<kw name="Limpar Atividades Concluidas" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:25.043004" level="INFO">Clicking element 'css:button.clear-completed'.</msg>
+<arg>css:button.clear-completed</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:25.042638" elapsed="0.068972"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:25.042068" elapsed="0.069651"/>
+</kw>
+<kw name="Filtrar Atividades Concluidas" owner="todo_keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-15T19:55:25.112606" level="INFO">Clicking element 'link:Completed'.</msg>
+<arg>link:Completed</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-15T19:55:25.112379" elapsed="0.083005"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:25.112050" elapsed="0.083550"/>
+</kw>
+<kw name="Verificar Lista Vazia" owner="todo_keywords">
+<kw name="Wait Until Page Does Not Contain Element" owner="SeleniumLibrary">
+<arg>css:ul.todo-list li</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" start="2025-11-15T19:55:25.196514" elapsed="0.014589"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:25.196049" elapsed="0.015165"/>
+</kw>
+<kw name="Fechar Aplicacao" owner="todo_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-11-15T19:55:25.212405" elapsed="2.161511"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:25.212064" elapsed="2.162250"/>
+</kw>
+<status status="PASS" start="2025-11-15T19:55:21.428381" elapsed="5.946752"/>
+</test>
+<status status="PASS" start="2025-11-15T19:55:06.936611" elapsed="20.442194"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Todo Tests" id="s1" pass="3" fail="0" skip="0">Todo Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
